@@ -1,0 +1,7 @@
+.text div img{
+    width: 340px;
+    padding: center;
+}
+.text{
+    display: inline-flex;
+}
