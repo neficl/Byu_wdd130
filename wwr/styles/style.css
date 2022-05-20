@@ -1,21 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Mukta&display=swap');
+
+
+.home-title {
+    font-family: 'Mukta', 'Barlow', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+      
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
-    text-align: center;
     background-color: #fcfbfb; 
 }
 
-nav a{
-    text-align: center;
-    text-decoration: none;
-}
-
-.icon{
-    width: 80px;
-}
-
-#hero-img{
-    width: 100px;
+#background {
+    height: 725px;
+    background-color: #aec9ae27;
 }
 
 header {
@@ -23,37 +25,50 @@ header {
     color: #d9c2a3
 }
 
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand';
+    font-size: 2em;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+}
+
 nav a:hover {
     background-color: black;
     color: #526fc04b
 }
 
-.join{
-    background-color: #91c5f3
+main section{
+    text-align: center;
 }
 
-.book{
-    background-color: #91c5f3
+main section img {
+    box-sizing: border-box;
 }
 
-.msg{
-    background-color: #5f71752f;
-    color: #0a10314b
+body {
+    background-color: #7ac0d1;
+    font-family: 'Bradley Hand', 'Rock Salt';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
-.book:hover{
-    background-color: #FE8D85;
-    color: #d9c2a3
+h2 {
+    margin: 0;
 }
-
-.join:hover{
-    background-color: #FE8D85;
-    color: #d9c2a3
-}
-
+     
 footer{
     background-color: rgb(120, 153, 123);
-    color: #d9c2a3
+    padding: 25px 50px;
+}
+
+footer .social img{
+    padding-top: 15px;
+    margin-top: 5px;
 }
 
 footer a{
@@ -64,9 +79,32 @@ footer h3 a:hover{
     text-decoration: underline;
 }
 
-#background {
-    height: 725px;
-    background-color: #aec9ae27;
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+
+}
+
+.card-img{
+    border: 10px solid black;
+}
+
+.icon{
+    width: 80px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 80px;
+    padding-top: 5px;
+    margin-top: 50px;
+}
+
+.button-box {
+    text-align: center;
+}
+    
+#hero-img{
+    width: 100%;
 }
 
 #hero-msg h1{
@@ -77,6 +115,35 @@ footer h3 a:hover{
     text-align: center;
 }
 
-main section{
-    text-align: center;
+.join{
+    background-color: #91c5f3;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.join:hover{
+    background-color: #FE8D85;
+    color: #d9c2a3
+}
+
+.book{
+    background-color: #91c5f3;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.book:hover{
+    background-color: #FE8D85;
+    color: #d9c2a3;
+}
+
+.msg {
+    background-color: #5f71752f;
+    color: #0a10314b;
+    padding: 35px;
+}
+
+.msg p{
+    padding-bottom: 15px;
 }
