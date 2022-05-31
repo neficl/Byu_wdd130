@@ -36,7 +36,6 @@
   /* This is the parent of the activity 2 boxes. */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
   grid-gap: 20px;
 }
 .red2 { 
@@ -58,7 +57,7 @@
   width: 200px; 
   height: 200px; 
   background-color: gold; 
-  margin-right: -300px;
+  margin-left: 150px;
   margin-top: -111px;
 }
 .blue2 {
@@ -66,7 +65,7 @@
   height: 200px; 
   background-color: blue; 
   margin-top: 1%;
-  margin-left: -85%;
+  margin-left: -400px;
 } 
 /* Activity 3 styles */ 
 .content3 {
