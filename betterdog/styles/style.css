@@ -74,7 +74,7 @@ nav a:hover {
 }
 
 body {
-    background-color: #14d7f5;
+    background-color: rgb(20, 173, 153);
     font-family: 'Roboto Slab', 'Noto Serif';
     font-size: 22px;
     margin: 0;
@@ -86,10 +86,72 @@ body {
     grid-template-columns: repeat(8, 1fr);
 }
 
+.touchingstories{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.touchingstories h3{
+    grid-column: 4;
+    width:1px;
+    margin-left: 50px;
+    word-wrap: break-word;
+    font-family: monospace; 
+    white-space: pre-wrap;
+}
+
 .page1, .step1{
     width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+.page2, .step3, .page3, .step4{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.step3{
+    color: black;
+    font-style: italic;
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: left;
+    justify-content: bottom;
+}
+
+.step3 h2, .step4 h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.step4{
+    color: black;
+    font-style: italic;
+    grid-column: 5/8;
+    text-align: left;
+    justify-content: right;
+}
+
+.page2{
+    grid-column: 2/4;
+    height: 350px;
+    width: 500px;
+    margin-top: 100px;
+    grid-row: 1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.page3{
+    grid-column: 5/8;
+    height: 350px;
+    width: 500px;
+    margin-top: 100px;
+    grid-row: 1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .page1{
