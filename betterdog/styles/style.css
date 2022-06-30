@@ -118,7 +118,6 @@ body {
     grid-column: 2/4;
     grid-row: 2;
     text-align: left;
-    justify-content: bottom;
 }
 
 .step3 h2, .step4 h2{
