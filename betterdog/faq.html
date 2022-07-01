@@ -13,7 +13,7 @@
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/betterdogs.png" alt="Logo">
+                <img class="logo" src="images/betterdogs.png" width="180" height="180" alt="Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -24,35 +24,44 @@
         <div id="hero">
             <section id="hero-msg">
                 <h1 class="home-title">Better Dog's</h1>
-                <h4>Néfi Leite</h4>
-                <div class='button-box'>
-                    <a class='book' href="rates.html">Adopt Now</a>
-                </div>
+                <h4> Néfi Leite</h4>
             </section>
         </div>
-        <main class="touching-stories">
-            <h3>Touching Stories</h3>
+        <main class="faq">
             <img src="images/cutie.jpg" class="page4" alt="cutie">
-            <p class="step3">
-                When we are going to adopt a dog, we often simply think about how to feed it, and keep it clean and
-                safe.
-                But
-                the truth is that a dog needs much more than that. After all, he is much more than a simple animal that
-                needs to
-                survive in the middle of a dense and dangerous forest. He is an animal that needs a home, a family, and
-                lots of
-                love. This need exists and you need to fill it. We'll teach you how to do it!
-            </p>
+            <div class="step5">
+                <p>
+                    When we are going to adopt a dog, we often simply think about how to feed it, and keep it clean and
+                    safe.
+                    But
+                    the truth is that a dog needs much more than that. After all, he is much more than a simple animal that
+                    needs to
+                    survive in the middle of a dense and dangerous forest. He is an animal that needs a home, a family, and
+                    lots of
+                    love. This need exists and you need to fill it. So, if you have any questions, type them in your message box, and we will respond and help you!
+                </p>
+            </div>
             <img src="images/lindodog.jpg" class="page5" alt="takeme">
-            <p class="step 4">
-                Adopting a dog is an act of love. After all, welcoming a puppy will bring love to both his life, which
-                will gain
-                a family and his life, which will have the affection and company of an eternally grateful animal.
-                Having a pet is having a great friend to accompany you on all adventures - and in sad moments too.
-                Remember you need to take action to enjoy the benefits of having a pet, so ready to meet your best
-                friend today?
-            </p>
-
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                 <li>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <label for="mail">E-mail:</label>
+                   <input type="email" id="mail" name="user_email">
+                 </li>
+                 <li>
+                   <label for="msg">Message:</label>
+                   <textarea id="msg" name="user_message"></textarea>
+                 </li>
+                 <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>                  
+                </ul>
+            </form>
         </main>
         <footer>
             <h3>Dry Oar &copy; 2022 - Néfi Leite</h3>
@@ -72,5 +81,25 @@
         </footer>
     </div>
 </body>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move the form down so our message doesn't cover it.
+        formElement.classList.toggle('moveDown');
+        // remove the message after 3 seconds
+        setTimeout(function(){feedbackElement.style.display = "none";}, 3000);
+        setTimeout(function(){formElement.classList.toggle('moveDown');}, 3000);
+    });
+</script>
 
 </html>
